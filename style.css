@@ -419,20 +419,18 @@ body {
 
 /* *Main */
 
+/* *Converter */
+
 .converter {
   display: flex;
   flex-direction: column;
 
   background-color: var(--gray-75);
   border: 3px solid var(--gray-05);
-  margin-block-start: 1.25rem;
-  max-width: 500px;
-  margin-inline: auto;
-  padding: 35px 45px;
-}
+  text-align: center;
 
-.flex-center--converter {
-  align-items: stretch;
+  padding: 35px 45px;
+  margin-block-start: 1.25rem;
 }
 
 .converter__label {
@@ -441,11 +439,12 @@ body {
 }
 
 .converter__input {
-  margin-block-start: 1.25rem;
   background-color: var(--gray-90);
   border: 1px solid var(--gray-05);
   font-size: 2.5rem;
+
   padding: 6px 12px;
+  margin-block-start: 1.25rem;
 }
 
 .btn {
@@ -461,30 +460,27 @@ body {
   margin-block-start: 1.5625rem;
 }
 
-input:focus,
 input:focus-visible,
-button:focus,
 button:focus-visible {
   outline: 3px solid var(--blue-50);
 }
 
 .output {
-  color: white;
-  background-color: var(--gray-75);
   border: 3px solid var(--gray-05);
+  background-color: var(--gray-75);
+  color: white;
   font-size: 2rem;
   text-align: center;
   overflow-wrap: break-word;
-  margin-inline: auto;
-  margin-block-start: 25px;
+
   padding: 15px;
-  max-width: 500px;
+  margin-block-start: 25px;
 }
 
 .output--alert {
+  border: 3px solid var(--danger-color);
   background-color: var(--danger-background);
   color: var(--danger-color);
-  border: 3px solid var(--danger-color);
 }
 
 .output--hidden {
@@ -498,22 +494,9 @@ button:focus-visible {
 */
 
 .mx-auto {
-  --_max-width: 62.5rem;
+  --_max-width: 500px;
   --_padding-x: 2rem;
+
   width: min(var(--_max-width), 100% - (var(--_padding-x) * 2));
   margin-inline: auto;
 }
-
-.flex-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
-/* 
-TODOS: input ki typo or size set krna hy, center krna sabkuch, alert style krna hy
-*/
