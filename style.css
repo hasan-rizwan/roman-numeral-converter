@@ -417,8 +417,6 @@ body {
   text-align: center;
 }
 
-/* *Main */
-
 /* *Converter */
 
 .converter {
@@ -426,10 +424,10 @@ body {
   flex-direction: column;
 
   background-color: var(--gray-75);
-  border: 3px solid var(--gray-05);
+  border: 0.1875rem solid var(--gray-05);
   text-align: center;
 
-  padding: 35px 45px;
+  padding: 2.1875rem 2.8125rem;
   margin-block-start: 1.25rem;
 }
 
@@ -440,20 +438,11 @@ body {
 
 .converter__input {
   background-color: var(--gray-90);
-  border: 1px solid var(--gray-05);
+  border: 0.0625rem solid var(--gray-05);
   font-size: 2.5rem;
 
-  padding: 6px 12px;
+  padding: 0.375rem 0.75rem;
   margin-block-start: 1.25rem;
-}
-
-.btn {
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  color: var(--gray-85);
-  border: 3px solid #feac32;
-  font-size: 1.4375rem;
-  padding: 10px;
-  cursor: pointer;
 }
 
 .btn--converter {
@@ -462,23 +451,23 @@ body {
 
 input:focus-visible,
 button:focus-visible {
-  outline: 3px solid var(--blue-50);
+  outline: 0.1875rem solid var(--blue-50);
 }
 
 .output {
-  border: 3px solid var(--gray-05);
+  border: 0.1875rem solid var(--gray-05);
   background-color: var(--gray-75);
   color: white;
   font-size: 2rem;
   text-align: center;
   overflow-wrap: break-word;
 
-  padding: 15px;
-  margin-block-start: 25px;
+  padding: 0.9375rem;
+  margin-block-start: 1.5625rem;
 }
 
 .output--alert {
-  border: 3px solid var(--danger-color);
+  border: 0.1875rem solid var(--danger-color);
   background-color: var(--danger-background);
   color: var(--danger-color);
 }
@@ -494,9 +483,18 @@ button:focus-visible {
 */
 
 .mx-auto {
-  --_max-width: 500px;
+  --_max-width: 31.25rem;
   --_padding-x: 2rem;
 
   width: min(var(--_max-width), 100% - (var(--_padding-x) * 2));
   margin-inline: auto;
+}
+
+.btn {
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  color: var(--gray-85);
+  border: 0.1875rem solid #feac32;
+  font-size: 1.4375rem;
+  padding: 0.625rem;
+  cursor: pointer;
 }
