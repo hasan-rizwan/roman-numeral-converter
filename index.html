@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="mx-auto">
+            <img src="./img/fcc-logo.svg" alt="freeCodeCamp" class="logo">
+            <h1 class="header__title">Roman Numeral Converter</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="mx-auto">
+            <form class="converter text-center">
+                <label for="converter__input" class="converter__label">Enter a Number:</label>
+                <input type="number" class="converter__input" id="converter__input">
+                <button type="submit" class="btn btn--converter">Convert</button>
+            </form>
+            <div class="output output--hidden">
+                Please enter a number less than or equal to 3999.
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
